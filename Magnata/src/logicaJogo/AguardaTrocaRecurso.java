@@ -88,7 +88,7 @@ public class AguardaTrocaRecurso extends Estado{
     @Override
     public Estado escolheRecursoTroca(){
         //metodo escolher dentro dos posiveis um
-        return new AguardaTipoJogada();
+        return this;
     }
     
 }

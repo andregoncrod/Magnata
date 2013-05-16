@@ -68,7 +68,7 @@ public class AguardaVenderCarta extends Estado{
     @Override
     public Estado EscolherJogada(){
         //escolhe carta a vender e vende se der
-        return new AguardaTipoJogada();
+        return this;
     }
     
     @Override
