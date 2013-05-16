@@ -65,10 +65,6 @@ public class AguardaEscolheRecurso extends Estado{
         return this;
     }
     
-    public Estado ComeçarTurno(){
-        return new AguardaTipoJogada();
-    }
-    
     @Override
     public Estado EscolherJogada(){
         return this;
@@ -76,7 +72,7 @@ public class AguardaEscolheRecurso extends Estado{
     
     @Override
     public Estado ComecarTurno(){
-        return this;
+        return new AguardaTipoJogada();
     }
     
     @Override
@@ -87,7 +83,7 @@ public class AguardaEscolheRecurso extends Estado{
     @Override
     public Estado escolheTokenEscritura(/*Naipe naipe1,Naipe naipe2*/){
         //metodo escolher entre dois tokens
-        return new AguardaTipoJogada();
+        return this;
     }
     
     @Override
